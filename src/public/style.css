@@ -26,3 +26,134 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+
+div.barra {
+    align-items: center;
+    background: linear-gradient(#1b2838, #171a21);
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    -webkit-app-region: drag;
+}
+
+div.barra-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+div.barra-menu {
+
+    display: flex;
+
+    gap: 32px;
+
+    flex: 1;
+
+    margin: 0 32px;
+
+}
+
+div.barra-menu a {
+    color: #c7d5e0;
+    display: block;
+    text-decoration: none;
+    -webkit-app-region: no-drag;
+}
+
+div.barra-menu a:hover {
+    color: #66c0f4;
+    cursor: pointer;
+}
+
+div.barra-botoes button {
+    background: transparent;
+    border: none;
+    color: #c7d5e0;
+    height: 32px;
+    width: 32px;
+    -webkit-app-region: no-drag;
+}
+
+div.barra-botoes button:hover {
+    background: #66c0f4;
+    color: #171a21;
+    cursor: pointer;
+}
+
+div.principal {
+    padding: 32px 0;
+}
+
+div.principal-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+div.oferta div {
+    color: #c7c7c7;
+}
+
+div.oferta div span {
+    background: #4C6B22;
+    color: #BEEE10;
+    padding: 0 8px;
+}
+
+div.oferta div a {
+    background: #2a475e;
+    color: #c7d5e0;
+    padding: 0 8px;
+}
+
+div.oferta img {
+    height: 240px;
+    object-fit: cover;
+    width: 240px;
+}
+
+
+
+div.barra-vermelho {
+    background: linear-gradient(#381b1b, #171a21);
+}
+
+img.logo-vermelho {
+    filter: hue-rotate(120deg);
+}
+
+a.selecionado {
+    color: #fff;
+}
+
+div.principal-quadros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+  div.quadro {
+    background: linear-gradient(#2a475e, #1b2838);
+}
+  
+  div.quadro img {
+    height: 400px;
+    object-fit: cover;
+    width: 200px;
+}
+
+  div.quadro div {
+    color: #66c0f4;
+    text-align: center;
+}

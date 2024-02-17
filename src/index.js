@@ -17,4 +17,16 @@ app.whenReady()
       })
 
       janela.loadFile( join(__dirname, "public/PaginaInicio.html") )
+
+      ipcMain.on("Minimizar", function() {
+        janela.minimize()
+      })
+    
+      ipcMain.on("Maximizar", function() {
+        janela.isMaximized() ? janela.unmaximize() : janela.maximize()
+      })
+
+      ipcMain.on("Fechar", function() {
+        app.quit()
+      })
   })
