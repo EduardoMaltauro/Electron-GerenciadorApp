@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="barra barra-vermelho">
+        <div class="barra-logo">
+            <img class="logo-vermelho" src="./icon.png" alt="logo" height="32">
+        </div>
+
+        <div class="barra-menu">
+            <a href="./PaginaInicio.html"> Início </a>
+            <a href="./PaginaJogos.html" class="selecionado"> Jogos </a>
+        </div>
+
+
+        <div class="barra-botoes">
+            <button onclick="electron.Minimizar()"> - </button>
+            <button onclick="electron.Maximizar()"> o </button>
+            <button onclick="electron.Fechar()"> x </button>
+        </div>
+    </div>
+
+    <iframe src="https://www.lexaloffle.com/bbs/?tid=31538" height="530" width="800" style="border: none; margin-top: 10px;"></iframe>
+</body>
+</html>
